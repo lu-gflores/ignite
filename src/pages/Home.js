@@ -27,8 +27,10 @@ const Home = () => {
         <GameList>
         <AnimateSharedLayout type='crossfade'>
         <AnimatePresence> { pathId && <GameDetail pathId={pathId} />} </AnimatePresence>
-
-         <h2>Search Results </h2> 
+        
+        {searched.length ? (
+            <div className='searched'>
+            <h2>Search Results </h2> 
             <Games>
                 {searched.map(game => (
                     <Game 
@@ -39,9 +41,9 @@ const Home = () => {
                     key={game.id}
                     />
                 ))}
-            </Games>    
-        
-            
+            </Games> 
+        </div>
+        ): ''}
             <h2>Upcoming Games</h2> 
             <Games>
                 {upcoming.map(game => (

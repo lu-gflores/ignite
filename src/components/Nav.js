@@ -8,7 +8,7 @@ import {useDispatch} from 'react-redux'
 
 const Nav = () => {
     const dispatch = useDispatch();
-    const [textInput, setTextInput] = useState();
+    const [textInput, setTextInput] = useState('');
     
     const inputHandler = e => {
             setTextInput(e.target.value)
@@ -26,8 +26,8 @@ const Nav = () => {
                 <h1>Ignite</h1>
             </Logo>
             <form className="search">
-                <input onChange={inputHandler} value={textInput} type="text"/>
-                <button onSubmit={submitSearch} type='submit'>Search</button>
+                <input value={textInput} onChange={inputHandler} type="text"/>
+                <button onClick={submitSearch} type='submit'>Search</button>
             </form>
         </StyledNav>
     )

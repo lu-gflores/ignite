@@ -1,3 +1,22 @@
+# Ignite
+
+## Description
+
+A react app site where you can find the latest and upcoming games on all platforms using the RAWG API.
+
+![Ignite Image](Ignite.gif)
+
+## Tech Resources
+
+- [React Router](https://reactrouter.com/)
+- [Redux](https://react-redux.js.org/)
+- [Styled Components](https://styled-components.com/)
+- [Rawg API](https://rawg.io/apidocs)
+
+# Demo
+
+[Demo](https://igniteyourgame.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
